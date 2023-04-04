@@ -1,0 +1,12 @@
+function reduceMoneyCostPerDay(time, date, availableMoney) {
+  // Validate input
+  if (typeof time !== 'number' || typeof date !== 'number' || typeof availableMoney !== 'number') {
+    return 'Invalid input, please provide clear instructions.';
+  }
+
+  // Calculate the amount of money to be reduced
+  const moneyToReduce = time * date * availableMoney;
+
+  // Return the reduced amount of money
+  return availableMoney - moneyToReduce;
+}
